@@ -1,0 +1,81 @@
+:root{
+    --background: #f6f6f6;
+    --font: #222;
+    --border: #333;
+    --screen: #eee;
+    --calculator: #aaa;
+    --btn: #eee;
+    --btn-hover: #ddd;
+    --btn-active: #ccc;
+    --btn-red: #faa;
+    --btn-red-active: #d88;
+    --btn-blue: #aaf;
+    --btn-blue-active: #88d;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--background)
+}
+
+main{
+    min-height: 500px;
+    height: 75vh;
+    margin-top: 50px;
+}
+
+.calculator-wrapper{
+    width: 400px;
+    background-color: var(--calculator);
+    border: 2px solid var(--border);
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.screen-view{
+    padding: 20px 10px;;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    margin: 20px;
+    background-color: var(--screen);
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+    font-size: 20px;
+    grid-gap: 10px;
+}
+
+.clear-btn{
+    background-color: var(--btn-red)!important;
+    text-align: center;
+    border: 2px solid var(--border);
+}
+
+.delete-btn{
+    background-color: var(--btn-blue)!important;
+    text-align: center;
+    border: 2px solid var(--border);
+}
+
+.span-2{
+    grid-column: span 2;
+}
+
+.btn{
+    padding: 20px;
+    border: 2px solid var(--border);
+    background-color: var(--btn);
+    font-size: 20px;
+}
