@@ -103,6 +103,8 @@ function operate(operation, firstOperand, secondOperand){
         case 'x':
             return multiply(firstOperand, secondOperand)
         case '÷':
+            if(secondOperand.textContent === '0')
+                return null
             return divide(firstOperand, secondOperand)
     }
 }
@@ -121,5 +123,5 @@ let multiply = (a, b)=>{
 }
 
 let divide = (a, b)=>{
-    return a+b;
+    return a/b;
 }
